@@ -6,18 +6,22 @@
     </div>
     <ul class='countries-card__wrapper'>
       <li class='countries-card__info'>
-        <p class='countries-card__parameter'>Capital:{{capital}}</p>
-        </li>
-        <li>
-        <p class='countries-card__parameter'>Population: {{population}}</p>
-        </li> 
-        <ul class='country-list'>
-          <p class='country-list__text countries-card__parameter'>Languages:</p>
-          {{#each languages}}
-            <li class='country-list__item countries-card__parameter'>{{this.name}}</li>
-          {{/each}}
-        </ul>
+        <p class='countries-card__parameter'>Capital:
+          <span class='countries-card--italic'>{{capital}}</span></p>
+      </li>
+      <li>
+        <p class='countries-card__parameter'>Population:
+          <span class='countries-card--italic'>{{population}}</span></p>
       </li>
     </ul>
+    <ul class='country-list'>
+      <li class='country-list__text countries-card__parameter'>Languages:</li>
+      {{#each languages}}
+        <p
+          class='country-list__item countries-card__parameter countries-card--italic'
+        >{{this.name}}</p>
+      {{/each}}
+    </ul>
+
   </div>
 {{/each}}

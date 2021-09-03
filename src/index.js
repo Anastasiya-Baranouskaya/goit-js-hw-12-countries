@@ -1,3 +1,4 @@
+import './sass/sass.css';
 import fetchCountries from './js/fetchCountries';
 import countriesCard from './templlates/countriesCard.hbs';
 import countriesList from './templlates/countriesList.hbs';
